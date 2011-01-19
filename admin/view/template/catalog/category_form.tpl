@@ -107,6 +107,13 @@
                 <?php } ?>
               </select></td>
           </tr>
+          
+          <!-- @3Easy: Echo Expiration Date -->
+          <tr>
+            <td><?php echo $entry_expiration; ?></td>
+            <td><input name="date_expiration" value="<?php echo $date_expiration; ?>" size="18" class="date" /></td>
+          </tr>
+          
           <tr>
             <td><?php echo $entry_sort_order; ?></td>
             <td><input name="sort_order" value="<?php echo $sort_order; ?>" size="1" /></td>
@@ -166,4 +173,14 @@ function image_upload(field, preview) {
 $.tabs('#tabs a'); 
 $.tabs('#languages a');
 //--></script>
+
+<!-- // @3Easy: Add jQuery UI Datepicker & Class Call -->
+<script type="text/javascript" src="view/javascript/jquery/ui/ui.datepicker.js"></script>
+<script type="text/javascript"><!--
+$(document).ready(function() {
+	$('.date').datepicker({dateFormat: 'yy-mm-dd 00:00:00'});
+});
+//--></script>
+
+
 <?php echo $footer; ?>

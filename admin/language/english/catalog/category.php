@@ -24,6 +24,9 @@ $_['entry_keyword']          = 'SEO Keyword:';
 $_['entry_image']            = 'Image:';
 $_['entry_sort_order']       = 'Sort Order:';
 
+// @3Easy: Language Entry Expiration
+$_['entry_expiration']       = 'Expiration:';
+
 // Error 
 $_['error_permission']       = 'Warning: You do not have permission to modify categories!';
 $_['error_name']             = 'Category Name must be between 2 and 32 characters!';

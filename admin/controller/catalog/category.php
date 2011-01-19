@@ -160,6 +160,9 @@ class ControllerCatalogCategory extends Controller {
 		$this->data['entry_sort_order'] = $this->language->get('entry_sort_order');
 		$this->data['entry_image'] = $this->language->get('entry_image');
 		$this->data['entry_status'] = $this->language->get('entry_status');
+		
+		// @3Easy: Get Expiration
+		$this->data['entry_expiration'] = $this->language->get('entry_expiration');
 
 		$this->data['button_save'] = $this->language->get('button_save');
 		$this->data['button_cancel'] = $this->language->get('button_cancel');
@@ -225,6 +228,15 @@ class ControllerCatalogCategory extends Controller {
 			$this->data['status'] = $category_info['status'];
 		} else {
 			$this->data['status'] = 1;
+		}
+		
+		// @3Easy: Set Expiration
+		if (isset($this->request->post['date_expiration'])) {
+			$this->data['date_expiration'] = $this->request->post['date_expiration'];
+		} elseif (isset($category_info)) {
+			$this->data['date_expiration'] = $category_info['date_expiration'];
+		} else {
+			$this->data['date_expiration'] = '';
 		}
 		
 		$this->data['categories'] = $this->model_catalog_category->getCategories(0);

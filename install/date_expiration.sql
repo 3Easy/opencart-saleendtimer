@@ -1,0 +1,1 @@
+ALTER TABLE  `category` ADD  `date_expiration` DATETIME NOT NULL AFTER  `date_modified`;
