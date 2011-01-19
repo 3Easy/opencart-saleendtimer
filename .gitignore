@@ -1,7 +1,0 @@
-.gitignore
-system/cache/*
-system/logs/*
-image/cache/*
-admin/config.php
-config.php
-*.esproj
