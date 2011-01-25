@@ -9,7 +9,7 @@
 	<h1><?php echo $heading_title; ?>
 		<span class="expiration">
 		<?php 
-	//      			$expiration = strtotime($date_expiration);
+	      			$expiration = strtotime($date_expiration);
 	//      			echo date("Y m d, h:i:s", $expiration); 
 			?>
 		</span>
