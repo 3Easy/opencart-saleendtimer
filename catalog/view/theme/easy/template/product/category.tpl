@@ -5,17 +5,41 @@
     <div class="right"></div>
     <div class="center">
     
-	<!-- @3Easy: Echo Expiration -->
-	<h1><?php echo $heading_title; ?>
-		<span class="expiration">
-		<?php 
-	      			$expiration = strtotime($date_expiration);
-	//      			echo date("Y m d, h:i:s", $expiration); 
-			?>
-		</span>
-	</h1>
+	<!-- @3Easy: Echo & Countdown To Expiration -->
+	<h1><?php echo $heading_title; ?></h1>
       
 	<!-- @3Easy: Countdown Dashboard -->
+	<div class="expiration">
+		<?php $expiration = strtotime($date_expiration); ?>
+		<div id="countdown_dashboard">
+			<div class="dash weeks_dash">
+				<div class="digit"><?=$date['weeks'][0]?></div>
+				<div class="digit"><?=$date['weeks'][1]?></div>
+				<span class="dash_separator">:</span>
+			</div>
+			<div class="dash days_dash">
+				<div class="digit"><?=$date['days'][0]?></div>
+				<div class="digit"><?=$date['days'][1]?></div>
+				<span class="dash_separator">:</span>
+			</div>
+			<div class="dash hours_dash">
+				<div class="digit"><?=$date['hours'][0]?></div>
+				<div class="digit"><?=$date['hours'][1]?></div>
+				<span class="dash_separator">:</span>
+			</div>
+			<div class="dash minutes_dash">
+				<div class="digit"><?=$date['mins'][0]?></div>
+				<div class="digit"><?=$date['mins'][1]?></div>
+				<span class="dash_separator">:</span>
+			</div>
+			<div class="dash seconds_dash">
+				<div class="digit"><?=$date['secs'][0]?></div>
+				<div class="digit"><?=$date['secs'][1]?></div>
+			</div>
+		</div>
+	</div>
+	
+	<!--
 	<div id="countdown_dashboard">
 		<div class="dash weeks_dash">
 			<span class="dash_title">weeks</span>
@@ -43,7 +67,8 @@
 			<div class="digit"><?=$date['secs'][1]?></div>
 		</div>
 	</div>
-      
+	-->
+	
     </div>
   </div>
   <div class="middle">
@@ -116,36 +141,18 @@
     <div class="center"></div>
   </div>
 </div>
-<script type="text/javascript">
-//	$(function () {
-//		var expirationDate = new Date(2011, 1-1, 26); 
-//		alert (expirationDate);
-//		alert ('<?php echo date("Y m d, h:i:s", $expiration); ?>');
-//		alert ('<?php echo date("d", $expiration); ?>');
-//		alert ('<?php echo date("m", $expiration); ?>');
-//		alert ('<?php echo date("Y", $expiration); ?>');
-//		alert ('<?php echo date("h", $expiration); ?>');
-//		alert ('<?php echo date("i", $expiration); ?>');
-//		alert ('<?php echo date("s", $expiration); ?>');
-//		$('.expirations').countdown({ 
-//			until: expirationString, 
-//			compact: true, 
-//			format: 'HMS'
-//		});
-//	});	
-</script>
 
 <script language="javascript" type="text/javascript">
 	jQuery(document).ready(function() {
 	
-		alert ('<?php echo date("Y m d, h:i:s", $expiration); ?>');
+//		alert ('<?php echo 'Expiration: ' . date("Y m d, h:i:s", $expiration); ?>');
 		
-		alert ('<?php echo date("d", $expiration); ?>');
-		alert ('<?php echo date("m", $expiration); ?>');
-		alert ('<?php echo date("Y", $expiration); ?>');
-		alert ('<?php echo date("H", $expiration); ?>');
-		alert ('<?php echo date("i", $expiration); ?>');
-		alert ('<?php echo date("s", $expiration); ?>');
+//		alert ('<?php echo date("d", $expiration); ?>');
+//		alert ('<?php echo date("m", $expiration); ?>');
+//		alert ('<?php echo date("Y", $expiration); ?>');
+//		alert ('<?php echo date("H", $expiration); ?>');
+//		alert ('<?php echo date("i", $expiration); ?>');
+//		alert ('<?php echo date("s", $expiration); ?>');
 		
 		$('#countdown_dashboard').countDown({
 			targetDate: {

@@ -253,10 +253,34 @@ p {
 	padding: 8px 0px 8px 7px;
 }
 /* @3Easy: Style Expiration Date */
-#content .top span {
+.expiration {
 	color: #fe0000;
-	float: right;
-	padding: 0 8px 0 0;
+	position: relative;
+	top: -24px;
+	left: 460px;
+/*	float: right;*/
+/*	padding: 0 8px 0 0;*/
+}
+#countdown_dashboard {
+/*	height: 110px;*/
+}
+.dash {
+/*	width: 110px;*/
+/*	height: 114px;*/
+/*	background: transparent url('../images/dash.png') 0 0 no-repeat;*/
+	float: left;
+/*	margin-left: 20px;*/
+	position: relative;
+}
+.dash .digit {
+	font-size: 14px;
+	font-weight: bold;
+	float: left;
+/*	width: 55px;*/
+	text-align: center;
+/*	font-family: Times;*/
+/*	color: #555;*/
+	position: relative;
 }
 #content h1, .heading {
 	color: #000000;
