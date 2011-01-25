@@ -281,6 +281,32 @@ p {
 /*	font-family: Times;*/
 /*	color: #555;*/
 	position: relative;
+	
+/*	text-shadow: 0 0 0.15em #fe0000;*/
+	-webkit-animation: fade 2s infinite ease-in-out;
+}
+/* @3Easy: CSS3 Keyframe */
+@-webkit-keyframes pulse {
+	0% {
+		text-shadow: 0 0 .15em rgba(254, 0, 0, 0.2);
+	}
+	50% {
+		text-shadow: 0 0 .15em rgba(254, 0, 0, 0.9);
+	}
+	100% {
+		text-shadow: 0 0 .15em rgba(254, 0, 0, 0.2);
+	}
+}
+@-webkit-keyframes fade {
+	0% {
+		color: rgba(254, 0, 0, 0.5);
+	}
+	50% {
+		color: rgba(254, 0, 0, 1.0);
+	}
+	100% {
+		color: rgba(254, 0, 0, 0.5);
+	}
 }
 #content h1, .heading {
 	color: #000000;

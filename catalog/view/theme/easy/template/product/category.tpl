@@ -5,69 +5,39 @@
     <div class="right"></div>
     <div class="center">
     
-	<!-- @3Easy: Echo & Countdown To Expiration -->
-	<h1><?php echo $heading_title; ?></h1>
-      
-	<!-- @3Easy: Countdown Dashboard -->
-	<div class="expiration">
-		<?php $expiration = strtotime($date_expiration); ?>
-		<div id="countdown_dashboard">
-			<div class="dash weeks_dash">
-				<div class="digit"><?=$date['weeks'][0]?></div>
-				<div class="digit"><?=$date['weeks'][1]?></div>
-				<span class="dash_separator">:</span>
+		<!-- @3Easy: Echo & Countdown To Expiration -->
+		<h1><?php echo $heading_title; ?></h1>
+	      
+		<!-- @3Easy: Countdown Dashboard -->
+		<div class="expiration">
+			<?php $expiration = strtotime($date_expiration); ?>
+			<div id="countdown_dashboard">
+				<div class="dash weeks_dash">
+					<div class="digit"><?=$date['weeks'][0]?></div>
+					<div class="digit"><?=$date['weeks'][1]?></div>
+					<span class="dash_separator">:</span>
+				</div>
+				<div class="dash days_dash">
+					<div class="digit"><?=$date['days'][0]?></div>
+					<div class="digit"><?=$date['days'][1]?></div>
+					<span class="dash_separator">:</span>
+				</div>
+				<div class="dash hours_dash">
+					<div class="digit"><?=$date['hours'][0]?></div>
+					<div class="digit"><?=$date['hours'][1]?></div>
+					<span class="dash_separator">:</span>
+				</div>
+				<div class="dash minutes_dash">
+					<div class="digit"><?=$date['mins'][0]?></div>
+					<div class="digit"><?=$date['mins'][1]?></div>
+					<span class="dash_separator">:</span>
+				</div>
+				<div class="dash seconds_dash">
+					<div class="digit"><?=$date['secs'][0]?></div>
+					<div class="digit"><?=$date['secs'][1]?></div>
+				</div>
 			</div>
-			<div class="dash days_dash">
-				<div class="digit"><?=$date['days'][0]?></div>
-				<div class="digit"><?=$date['days'][1]?></div>
-				<span class="dash_separator">:</span>
-			</div>
-			<div class="dash hours_dash">
-				<div class="digit"><?=$date['hours'][0]?></div>
-				<div class="digit"><?=$date['hours'][1]?></div>
-				<span class="dash_separator">:</span>
-			</div>
-			<div class="dash minutes_dash">
-				<div class="digit"><?=$date['mins'][0]?></div>
-				<div class="digit"><?=$date['mins'][1]?></div>
-				<span class="dash_separator">:</span>
-			</div>
-			<div class="dash seconds_dash">
-				<div class="digit"><?=$date['secs'][0]?></div>
-				<div class="digit"><?=$date['secs'][1]?></div>
-			</div>
 		</div>
-	</div>
-	
-	<!--
-	<div id="countdown_dashboard">
-		<div class="dash weeks_dash">
-			<span class="dash_title">weeks</span>
-			<div class="digit"><?=$date['weeks'][0]?></div>
-			<div class="digit"><?=$date['weeks'][1]?></div>
-		</div>
-		<div class="dash days_dash">
-			<span class="dash_title">days</span>
-			<div class="digit"><?=$date['days'][0]?></div>
-			<div class="digit"><?=$date['days'][1]?></div>
-		</div>
-		<div class="dash hours_dash">
-			<span class="dash_title">hours</span>
-			<div class="digit"><?=$date['hours'][0]?></div>
-			<div class="digit"><?=$date['hours'][1]?></div>
-		</div>
-		<div class="dash minutes_dash">
-			<span class="dash_title">minutes</span>
-			<div class="digit"><?=$date['mins'][0]?></div>
-			<div class="digit"><?=$date['mins'][1]?></div>
-		</div>
-		<div class="dash seconds_dash">
-			<span class="dash_title">seconds</span>
-			<div class="digit"><?=$date['secs'][0]?></div>
-			<div class="digit"><?=$date['secs'][1]?></div>
-		</div>
-	</div>
-	-->
 	
     </div>
   </div>
@@ -142,6 +112,7 @@
   </div>
 </div>
 
+<!-- @3Easy: Countdown Javascript -->
 <script language="javascript" type="text/javascript">
 	jQuery(document).ready(function() {
 	
