@@ -261,6 +261,13 @@ p {
 /*	float: right;*/
 /*	padding: 0 8px 0 0;*/
 }
+.expired {
+	font-size: 14px;
+	font-weight: bold;
+	position: absolute;
+/*	left: -93px;*/
+	display: none;
+}
 #countdown_dashboard {
 /*	height: 110px;*/
 }

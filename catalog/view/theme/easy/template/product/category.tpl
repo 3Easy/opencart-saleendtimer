@@ -37,6 +37,9 @@
 					<div class="digit"><?=$date['secs'][1]?></div>
 				</div>
 			</div>
+			<div class="expired">
+				<p>Sale Ended :(</p>
+			</div>
 		</div>
 	
     </div>
@@ -133,6 +136,12 @@
 				'hour': 	'<?php echo date("H", $expiration); ?>',
 				'min': 		'<?php echo date("i", $expiration); ?>',
 				'sec': 		'<?php echo date("s", $expiration); ?>'
+			},
+			// onComplete function
+			onComplete: function() { 
+				$('#countdown_dashboard').hide();
+				$('.expired').slideDown(1000);
+//				alert('Sale Ends :(');
 			}
 		});
 	});
