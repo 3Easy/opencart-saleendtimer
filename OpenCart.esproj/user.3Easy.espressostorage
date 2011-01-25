@@ -4,6 +4,33 @@
 <dict>
 	<key>ESProjectShowHiddenFilesKey</key>
 	<false/>
+	<key>ESProjectWindowState</key>
+	<dict>
+		<key>ContentSize</key>
+		<string>{1254, 714}</string>
+		<key>ProjectURL</key>
+		<string>file://localhost/Users/3Easy/Sites/OpenCart/OpenCart.esproj/</string>
+		<key>StateType</key>
+		<string>ProjectWindow</string>
+		<key>TopLeftPoint</key>
+		<string>{67, 878}</string>
+	</dict>
+	<key>com.macrabbit.Espresso.FileManager.DisclosureCollapsed</key>
+	<false/>
+	<key>com.macrabbit.Espresso.FileManager.FileControllerState</key>
+	<dict>
+		<key>ExpandedURLs</key>
+		<array>
+			<string>file://localhost/Users/3Easy/Sites/OpenCart/catalog/controller/product</string>
+			<string>file://localhost/Users/3Easy/Sites/OpenCart/catalog/model/catalog</string>
+			<string>file://localhost/Users/3Easy/Sites/OpenCart/catalog/view/theme/default/template/product</string>
+			<string>file://localhost/Users/3Easy/Sites/OpenCart/catalog/view/theme/easy/stylesheet</string>
+			<string>file://localhost/Users/3Easy/Sites/OpenCart/catalog/view/theme/easy/template/common</string>
+			<string>file://localhost/Users/3Easy/Sites/OpenCart/catalog/view/theme/easy/template/product</string>
+		</array>
+	</dict>
+	<key>com.macrabbit.Espresso.Publisher.DisclosureCollapsed</key>
+	<false/>
 	<key>com.macrabbit.Espresso.Workspace.Tabs</key>
 	<dict>
 		<key>Tabs</key>
@@ -34,23 +61,25 @@
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/3Easy/Sites/OpenCart/config.php</string>
+				<string>file://localhost/Users/3Easy/Sites/OpenCart/catalog/view/theme/easy/template/common/header.tpl</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/3Easy/Sites/OpenCart/admin/config.php</string>
+				<string>file://localhost/Users/3Easy/Sites/OpenCart/catalog/view/theme/easy/stylesheet/stylesheet.css</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/3Easy/Sites/OpenCart/install/date_expiration.sql</string>
+				<string>file://localhost/Users/3Easy/Sites/OpenCart/catalog/view/theme/easy/template/product/category.tpl</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
 		</array>
 	</dict>
+	<key>com.macrabbit.Espresso.WorkspaceTabs.DisclosureCollapsed</key>
+	<false/>
 </dict>
 </plist>

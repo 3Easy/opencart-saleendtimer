@@ -53,6 +53,9 @@ class ControllerProductCategory extends Controller {
 			
 			$this->data['heading_title'] = $category_info['name'];
 			
+			// @3Easy: Get Expiration Date
+			$this->data['date_expiration'] = $category_info['date_expiration'];
+			
 			$this->data['description'] = html_entity_decode($category_info['description'], ENT_QUOTES, 'UTF-8');
 			
 			$this->data['text_sort'] = $this->language->get('text_sort');
